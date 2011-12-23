@@ -39,7 +39,7 @@ http.createServer(function (req, res) {
 
     // Action classes can be passed as parameters to TropoWebAPI class methods.
     // use the record method https://www.tropo.com/docs/webapi/record.htm
-    tropo.record(3, false, null, choices, audio/wav, 5, 60, null, null, "recording", null, say, 5, null, "http://example.com/tropo", null, null);
+    tropo.record(3, false, null, choices, "audio/wav", 5, 60, null, null, "recording", null, say, 5, null, "http://example.com/tropo", null, null);
 	
 	
     tropo.say(answer);
