@@ -33,7 +33,14 @@ http.createServer(function (req, res) {
 	var answer = answers[Math.floor(Math.random()*answers.length)];
 	
 	tropo.say("Welcome to the tropo node J S magic 8 ball.");
-	tropo.record(1, true, true, , , 2, 30, , , "test", true, "Ask your question now.", 30, , , , );
+
+	var say = new Say("Ask your question now after the beep.");
+    var choices = new Choices(null, null, "#");
+
+    // Action classes can be passed as parameters to TropoWebAPI class methods.
+    // use the record method https://www.tropo.com/docs/webapi/record.htm
+    tropo.record(3, false, null, choices, audio/wav, 5, 60, null, null, "recording", null, say, 5, null, "http://example.com/tropo", null, null);
+	
 	
     tropo.say(answer);
 
