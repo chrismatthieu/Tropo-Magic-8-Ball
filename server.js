@@ -32,8 +32,8 @@ http.createServer(function (req, res) {
 	var tropo = new tropowebapi.TropoWebAPI(); 	
 	var answer = answers[Math.floor(Math.random()*answers.length)];
 	
-	tropo.say("Welcome to the tropo node J S magic 8 ball. Ask your question now.");
-	tropo.record();
+	tropo.say("Welcome to the tropo node J S magic 8 ball.");
+	tropo.record(1, true, true, , , 2, 30, , , "test", true, "Ask your question now.", 30, , , , );
 	
     tropo.say(answer);
 
